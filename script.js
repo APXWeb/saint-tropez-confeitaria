@@ -117,16 +117,4 @@
     statEls.forEach(animateCount);
   }
 
-  // Visual menu tabs
-  const menuTabs = document.querySelectorAll('.menu-tab');
-  const menuPanels = document.querySelectorAll('.menu-panel');
-
-  menuTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      menuTabs.forEach(t => t.classList.remove('active'));
-      menuPanels.forEach(p => p.classList.remove('active'));
-      tab.classList.add('active');
-      document.querySelector(`.menu-panel[data-panel="${tab.dataset.tab}"]`).classList.add('active');
-    });
-  });
 })();
