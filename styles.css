@@ -441,80 +441,73 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
   .gallery-item.span-2 { grid-column: span 2; }
 }
 
-/* Builder */
-.builder { padding: 90px 0 110px; background: var(--cream-2); }
-.builder-lead { max-width: 600px; margin: 0 auto; }
-.builder-box {
-  background: #fff;
-  border-radius: 26px;
-  box-shadow: var(--shadow);
-  padding: 36px;
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 30px;
-}
-.builder-tabs {
+/* Visual menu */
+.menu-visual { padding: 90px 0 110px; background: var(--cream-2); }
+.builder-lead { max-width: 600px; margin: 0 auto; text-align: center; }
+
+.menu-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 22px;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0 32px;
 }
-.builder-tab {
+.menu-tab {
   border: 1.5px solid rgba(31,138,130,0.25);
   background: transparent;
   color: var(--teal-dark);
-  padding: 8px 16px;
+  padding: 10px 20px;
   border-radius: 999px;
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: background 0.25s ease, color 0.25s ease;
-}
-.builder-tab.active, .builder-tab:hover { background: var(--teal); color: #fff; border-color: var(--teal); }
-
-.builder-panel { display: none; flex-wrap: wrap; gap: 10px; animation: fadeIn 0.35s ease; }
-.builder-panel.active { display: flex; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
-
-.item-chip {
-  border: 1.5px dashed rgba(31,138,130,0.35);
-  background: var(--cream);
-  color: var(--ink);
-  padding: 10px 16px;
-  border-radius: 14px;
   font-family: var(--font-body);
   font-size: 0.88rem;
   cursor: pointer;
-  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  transition: background 0.25s ease, color 0.25s ease;
 }
-.item-chip:hover { border-color: var(--teal); transform: translateY(-2px); }
-.item-chip.selected { background: var(--teal); border-color: var(--teal); color: #fff; }
+.menu-tab.active, .menu-tab:hover { background: var(--teal); color: #fff; border-color: var(--teal); }
 
-.builder-summary {
-  background: var(--cream);
+.menu-panel {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  animation: fadeIn 0.35s ease;
+}
+.menu-panel.active { display: grid; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+.menu-panel figure {
+  margin: 0;
   border-radius: 18px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(31,138,130,0.1);
+  position: relative;
+  aspect-ratio: 4/3.4;
 }
-.builder-list { list-style: none; padding: 0; margin: 0 0 20px; flex: 1; min-height: 60px; }
-.builder-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 9px 0;
-  border-bottom: 1px solid rgba(31,138,130,0.12);
-  font-size: 0.9rem;
+.menu-panel img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.menu-panel figure:hover img { transform: scale(1.08); }
+.menu-panel figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 12px 14px;
+  background: linear-gradient(to top, rgba(20,50,47,0.78), transparent);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
-.builder-list li button {
-  background: none;
-  border: none;
-  color: var(--pink);
-  font-size: 1.1rem;
-  cursor: pointer;
-  line-height: 1;
+
+.menu-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin: 30px 0 0;
 }
-.builder-empty { color: var(--ink-soft); font-style: italic; font-size: 0.85rem; border-bottom: none !important; }
+.menu-note a { color: var(--teal-dark); }
+
+@media (max-width: 780px) {
+  .menu-panel { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .menu-panel { grid-template-columns: 1fr; }
+}
 
 /* Visit */
 .visit { padding: 110px 0; }
@@ -608,7 +601,6 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
   .about-inner { grid-template-columns: 1fr; }
   .about-visual { max-width: 320px; margin: 0 auto; }
   .products-grid { grid-template-columns: repeat(3, 1fr); }
-  .builder-box { grid-template-columns: 1fr; }
   .visit-inner { grid-template-columns: 1fr; }
   .nav-links {
     position: absolute;

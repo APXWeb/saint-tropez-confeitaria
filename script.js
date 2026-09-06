@@ -1,6 +1,5 @@
 (() => {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const WHATSAPP_NUMBER = '5511944815707';
 
   // Mobile nav toggle
   const navToggle = document.getElementById('nav-toggle');
@@ -118,73 +117,16 @@
     statEls.forEach(animateCount);
   }
 
-  // Product builder
-  const tabs = document.querySelectorAll('.builder-tab');
-  const panels = document.querySelectorAll('.builder-panel');
-  const builderList = document.getElementById('builder-list');
-  const builderEmpty = document.getElementById('builder-empty');
-  const builderSend = document.getElementById('builder-send');
-  const selectedItems = new Set();
+  // Visual menu tabs
+  const menuTabs = document.querySelectorAll('.menu-tab');
+  const menuPanels = document.querySelectorAll('.menu-panel');
 
-  tabs.forEach(tab => {
+  menuTabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      panels.forEach(p => p.classList.remove('active'));
+      menuTabs.forEach(t => t.classList.remove('active'));
+      menuPanels.forEach(p => p.classList.remove('active'));
       tab.classList.add('active');
-      document.querySelector(`.builder-panel[data-panel="${tab.dataset.tab}"]`).classList.add('active');
+      document.querySelector(`.menu-panel[data-panel="${tab.dataset.tab}"]`).classList.add('active');
     });
   });
-
-  function renderBuilderList() {
-    builderList.querySelectorAll('li:not(#builder-empty)').forEach(li => li.remove());
-    if (selectedItems.size === 0) {
-      builderEmpty.style.display = 'block';
-    } else {
-      builderEmpty.style.display = 'none';
-      selectedItems.forEach(item => {
-        const li = document.createElement('li');
-        const span = document.createElement('span');
-        span.textContent = item;
-        const removeBtn = document.createElement('button');
-        removeBtn.type = 'button';
-        removeBtn.textContent = '×';
-        removeBtn.setAttribute('aria-label', `Remover ${item}`);
-        removeBtn.addEventListener('click', () => {
-          selectedItems.delete(item);
-          document.querySelectorAll(`.item-chip[data-item="${CSS.escape(item)}"]`).forEach(chip => chip.classList.remove('selected'));
-          renderBuilderList();
-        });
-        li.appendChild(span);
-        li.appendChild(removeBtn);
-        builderList.appendChild(li);
-      });
-    }
-    updateBuilderLink();
-  }
-
-  function updateBuilderLink() {
-    if (selectedItems.size === 0) {
-      builderSend.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Olá! Vi o site da Saint Tropez Confeitaria e gostaria de mais informações.')}`;
-      return;
-    }
-    const list = Array.from(selectedItems).map(item => `- ${item}`).join('\n');
-    const message = `Olá! Vi o site da Saint Tropez Confeitaria e gostaria de saber mais sobre estes itens:\n${list}\n\nPoderiam me ajudar com disponibilidade e preços?`;
-    builderSend.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-  }
-
-  document.querySelectorAll('.item-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      const item = chip.dataset.item;
-      if (selectedItems.has(item)) {
-        selectedItems.delete(item);
-        chip.classList.remove('selected');
-      } else {
-        selectedItems.add(item);
-        chip.classList.add('selected');
-      }
-      renderBuilderList();
-    });
-  });
-
-  renderBuilderList();
 })();
