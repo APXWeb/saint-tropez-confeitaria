@@ -143,11 +143,9 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
   color: var(--teal-dark);
 }
 .logo-img {
-  height: 42px; width: auto; display: block;
-  background: #fff;
+  height: 48px; width: auto; display: block;
   border-radius: 10px;
-  padding: 4px 10px;
-  box-shadow: 0 2px 8px rgba(31,138,130,0.1);
+  box-shadow: 0 2px 8px rgba(31,138,130,0.15);
 }
 
 .nav-links {
