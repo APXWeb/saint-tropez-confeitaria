@@ -242,7 +242,7 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
 }
 .hero-content .eyebrow { color: #fff; }
 .hero h1 { color: #fff; }
-.hero .script { color: var(--terracotta); }
+.hero .script { color: #5B90C4; }
 .hero-lead { font-size: 1.12rem; max-width: 560px; color: rgba(255,255,255,0.85); }
 
 .hero-actions { display: flex; gap: 16px; margin-top: 28px; flex-wrap: wrap; }
