@@ -5,8 +5,8 @@
   --ink-soft: #5B564E;
   --teal: #1F8A82;
   --teal-dark: #146059;
-  --pink: #F2A6BE;
-  --pink-soft: #F6D7E1;
+  --terracotta: #C4714E;
+  --terracotta-soft: #F0DBCD;
   --gold: #E8B84B;
   --gold-soft: #F6E3B4;
   --navy: #1F3B57;
@@ -64,7 +64,7 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
   position: absolute;
   left: 0; bottom: -2px;
   width: 0; height: 3px;
-  background: var(--pink);
+  background: var(--terracotta);
   border-radius: 3px;
   transition: width 0.8s ease 0.25s;
 }
@@ -383,7 +383,7 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
 
 /* Marquee */
 .marquee {
-  background: var(--pink-soft);
+  background: var(--terracotta-soft);
   overflow: hidden;
   padding: 18px 0;
   border-top: 1px solid rgba(31,138,130,0.1);
@@ -450,7 +450,7 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
 .product-card-footer span {
   width: 6px; height: 6px;
   border-radius: 50%;
-  background: var(--pink);
+  background: var(--terracotta);
   animation: dotPulse 2.2s ease-in-out infinite;
 }
 @keyframes dotPulse {
@@ -566,7 +566,7 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
 
 .visit-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
 .info-chip {
-  background: var(--pink-soft);
+  background: var(--terracotta-soft);
   color: var(--teal-dark);
   padding: 8px 14px;
   border-radius: 999px;
