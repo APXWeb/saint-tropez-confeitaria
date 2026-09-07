@@ -499,6 +499,54 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
   .gallery-item.span-2 { grid-column: span 2; }
 }
 
+/* FAQ */
+.faq { padding: 90px 0; }
+.faq-list {
+  max-width: 780px;
+  margin: 40px auto 0;
+}
+.faq-item {
+  border-bottom: 1px solid rgba(31,138,130,0.16);
+}
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: none;
+  border: none;
+  padding: 22px 4px;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+  cursor: pointer;
+}
+.faq-icon {
+  flex-shrink: 0;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--cream-2);
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: transform 0.35s ease, background 0.35s ease, color 0.35s ease;
+}
+.faq-item.open .faq-icon {
+  transform: rotate(135deg);
+  background: var(--teal);
+  color: #fff;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.faq-answer p { padding: 0 4px 22px; margin: 0; }
 
 /* Visit */
 .visit { padding: 110px 0; position: relative; overflow: hidden; }
@@ -590,6 +638,21 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
 .contact p { color: rgba(255,255,255,0.8); }
 .contact-inner { max-width: 560px; margin: 0 auto; position: relative; z-index: 1; }
 .contact-actions { display: flex; justify-content: center; gap: 16px; margin-top: 24px; flex-wrap: wrap; }
+.contact-handle {
+  margin: 34px 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.02em;
+}
+.contact-handle-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #4ADE80;
+  animation: dotPulse 2.2s ease-in-out infinite;
+}
 .contact .btn-outline { border-color: rgba(255,255,255,0.6); color: #fff; }
 .contact .btn-outline:hover { background: #fff; color: var(--teal-dark); }
 
