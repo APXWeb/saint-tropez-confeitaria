@@ -395,7 +395,7 @@ p { color: var(--ink-soft); margin: 0 0 14px; }
 .section-heading { text-align: center; max-width: 640px; margin: 0 auto 50px; }
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 .product-card {
