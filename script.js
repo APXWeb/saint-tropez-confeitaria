@@ -27,6 +27,22 @@
     cursorGlow.style.display = 'none';
   }
 
+  // Hero leaves mouse parallax
+  const heroSection = document.querySelector('.hero');
+  const heroLeaves = document.querySelectorAll('.hero-leaves .leaf');
+  if (heroSection && heroLeaves.length && !prefersReducedMotion && window.matchMedia('(pointer: fine)').matches) {
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width - 0.5;
+      const py = (e.clientY - rect.top) / rect.height - 0.5;
+      heroLeaves.forEach((leaf, i) => {
+        const strength = (i + 1) * 14;
+        leaf.style.setProperty('--parallax-x', `${px * strength}px`);
+        leaf.style.setProperty('--parallax-y', `${py * strength}px`);
+      });
+    });
+  }
+
   // Header scroll state + active link + back-to-top
   const header = document.getElementById('site-header');
   const backToTop = document.getElementById('back-to-top');
