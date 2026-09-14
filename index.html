@@ -3,374 +3,463 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saint Tropez Confeitaria | Um novo conceito em confeitaria</title>
-<meta name="description" content="Confeitaria Saint Tropez, na Zona Norte de São Paulo. Bolos, doces, cafés especiais, adega e frios selecionados, num ambiente inspirado na Côte d'Azur.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<title>Saint Tropez Confeitaria | A Côte d'Azur na Zona Norte de São Paulo</title>
+<meta name="description" content="Confeitaria francesa inspirada na Côte d'Azur, em Santa Teresinha, Zona Norte de São Paulo. Croissants, bolos, cafés selecionados, vinhos e frios. Aberta todos os dias a partir das 6h.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A6B68">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Saint Tropez Confeitaria">
+<meta property="og:title" content="Saint Tropez Confeitaria | A Côte d'Azur na Zona Norte">
+<meta property="og:description" content="Croissants, bolos, cafés, vinhos e frios num salão claro inspirado no sul da França. Rua Piracema, 211, Santa Teresinha.">
+<meta property="og:image" content="https://apxweb.github.io/saint-tropez-confeitaria/assets/img/interior-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/opt/interior-1-1170.webp" imagesrcset="assets/img/opt/interior-1-800.webp 800w, assets/img/opt/interior-1-1170.webp 1170w" imagesizes="(max-width: 900px) 100vw, 55vw">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></symbol>
+    <symbol id="i-wine" viewBox="0 0 24 24"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></symbol>
+    <symbol id="i-basket" viewBox="0 0 24 24"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></symbol>
+    <symbol id="i-nav" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+    <symbol id="i-sunrise" viewBox="0 0 24 24"><path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-utensils" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 3 2h3Zm0 0v7"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="site-header" id="site-header">
   <div class="container header-inner">
-    <a href="#inicio" class="logo">
-      <img src="assets/img/logo-icon.png" alt="" class="logo-icon-img">
-      <span class="logo-text">Saint Tropez<em>confeitaria</em></span>
+    <a href="#inicio" class="brand" aria-label="Saint Tropez Confeitaria, voltar ao início">
+      <img src="assets/img/logo-icon.png" alt="" width="44" height="44" class="brand-mark">
+      <span class="brand-word">Saint Tropez<small>confeitaria</small></span>
     </a>
 
-    <nav class="nav-links" id="nav-links">
-      <a href="#sobre">Sobre</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#duvidas">Dúvidas</a>
-      <a href="#visite-nos">Visite-nos</a>
-      <a href="#contato">Contato</a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#casa">A casa</a>
+      <a href="#vitrine">Vitrine</a>
+      <a href="#dia">Um dia aqui</a>
+      <a href="#ambiente">Ambiente</a>
+      <a href="#visite">Visite</a>
     </nav>
 
-    <a class="btn btn-primary btn-header" href="https://wa.me/5511944815707?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Saint%20Tropez%20Confeitaria%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Fale Conosco</a>
-
-    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-actions">
+      <span class="status-pill status-pill-header" data-status>
+        <span class="status-dot" aria-hidden="true"></span>
+        <span data-status-text>Aberta todos os dias</span>
+      </span>
+      <a class="btn btn-primary btn-sm header-cta" href="https://www.google.com/maps/search/?api=1&amp;query=Saint+Tropez+Confeitaria+Rua+Piracema+211+Santa+Teresinha+Sao+Paulo" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg>Como chegar
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-<main>
+<main id="conteudo">
 
-  <section class="hero" id="inicio">
-    <div class="hero-media" aria-hidden="true">
-      <img src="assets/img/facade-wide.jpg" alt="">
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-leaves" aria-hidden="true">
-      <svg class="leaf leaf-1" viewBox="0 0 200 200"><path d="M100 190C100 190 20 150 20 80C20 40 60 10 100 10C140 10 180 40 180 80C180 150 100 190 100 190Z" fill="#1F8A82"/></svg>
-      <svg class="leaf leaf-2" viewBox="0 0 200 200"><path d="M100 190C100 190 20 150 20 80C20 40 60 10 100 10C140 10 180 40 180 80C180 150 100 190 100 190Z" fill="#C4714E"/></svg>
-      <svg class="leaf leaf-3" viewBox="0 0 200 200"><path d="M100 190C100 190 20 150 20 80C20 40 60 10 100 10C140 10 180 40 180 80C180 150 100 190 100 190Z" fill="#E8B84B"/></svg>
-    </div>
-
-    <div class="container hero-content" data-reveal>
-      <span class="eyebrow">🌴 Santa Terezinha · Zona Norte de São Paulo</span>
-      <h1>Um novo conceito<br><span class="script">em confeitaria</span></h1>
-      <p class="hero-lead">Bolos, doces, cafés especiais, adega e frios selecionados, servidos num ambiente claro e elegante, inspirado na Côte d'Azur. Feito para quem gosta de começar (ou terminar) o dia com algo especial.</p>
-      <div class="hero-actions">
-        <a href="#produtos" class="btn btn-primary">Ver Produtos</a>
-        <a href="#galeria" class="btn btn-outline">Ver Galeria</a>
-      </div>
-    </div>
-
-    <div class="hero-stats-row" data-reveal data-delay="1">
-      <div class="hero-stat">
-        <span class="stat-number" data-count="58.8" data-suffix=" mil">0</span>
-        <span>seguidores no Instagram</span>
-      </div>
-      <div class="hero-stat">
-        <span class="stat-number" data-count="4.9" data-decimals="1">0</span>
-        <span>estrelas de avaliação</span>
-      </div>
-      <div class="hero-stat">
-        <span class="stat-number" data-count="6211" data-suffix="+">0</span>
-        <span>avaliações de clientes</span>
-      </div>
-      <div class="hero-stat">
-        <span class="stat-number" data-count="2019" data-nocommify="1">0</span>
-        <span>ano de fundação</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="about" id="sobre">
-    <svg class="leaf leaf-1" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 190C100 190 20 150 20 80C20 40 60 10 100 10C140 10 180 40 180 80C180 150 100 190 100 190Z" fill="#1F8A82"/></svg>
-    <svg class="leaf leaf-2" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 190C100 190 20 150 20 80C20 40 60 10 100 10C140 10 180 40 180 80C180 150 100 190 100 190Z" fill="#C4714E"/></svg>
-    <div class="about-inner">
-      <div class="about-visual" data-reveal>
-        <img src="assets/img/interior-2.jpg" alt="Ambiente interno da Saint Tropez Confeitaria">
-        <div class="about-visual-badge">
-          <img src="assets/img/logo-icon.png" alt="">
-          <span>Desde 2019</span>
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          Santa Teresinha · Zona Norte de SP
+        </p>
+        <h1 id="hero-title" class="hero-title">
+          <span class="line"><span class="line-inner">A Côte d'Azur</span></span>
+          <span class="line"><span class="line-inner"><em>na Zona Norte</em></span></span>
+        </h1>
+        <p class="hero-lead reveal" style="--d:3">
+          Croissants folhados, bolos de vitrine, cafés selecionados, vinhos e frios, servidos num salão claro que lembra o sul da França. Aberta todos os dias, a partir das 6h.
+        </p>
+        <div class="hero-actions reveal" style="--d:4">
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Saint+Tropez+Confeitaria+Rua+Piracema+211+Santa+Teresinha+Sao+Paulo" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg>Como chegar
+          </a>
+          <a class="btn btn-ghost" href="#vitrine">Ver a vitrine</a>
         </div>
-      </div>
-      <div class="about-copy" data-reveal data-delay="1">
-        <span class="eyebrow">Nossa história</span>
-        <h2>Uma história com <span class="text-accent">sabor próprio</span></h2>
-        <p>Desde 2019, a Saint Tropez leva à Zona Norte de São Paulo uma confeitaria com alma de Côte d'Azur: ambiente claro, elegante e acolhedor, pensado para cafés da manhã tranquilos e lanches memoráveis, bem no coração de Santa Terezinha.</p>
-        <p>Aqui, cada visita é feita com atenção: pedidos preparados na hora, ingredientes selecionados e um cardápio que passeia por bolos, doces finos, cafés especiais, uma adega própria e uma ilha de frios completa.</p>
-        <ul class="about-tags">
-          <li>Atendimento presencial</li>
-          <li>Pedidos preparados na hora</li>
-          <li>Ambiente clean e iluminado</li>
+
+        <ul class="proof reveal" style="--d:5" aria-label="Destaques da casa">
+          <li>
+            <span class="proof-value"><svg class="icon icon-star" aria-hidden="true"><use href="#i-star"/></svg><span data-count="4.7" data-decimals="1">4,7</span></span>
+            <span class="proof-label">no Google, mais de 7 mil avaliações</span>
+          </li>
+          <li>
+            <span class="proof-value"><span data-count="58">58</span> mil</span>
+            <span class="proof-label">seguidores no Instagram</span>
+          </li>
+          <li>
+            <span class="proof-value">2019</span>
+            <span class="proof-label">ano de inauguração</span>
+          </li>
         </ul>
       </div>
+
+      <div class="hero-media">
+        <figure class="hero-photo hero-photo-main">
+          <img src="assets/img/opt/interior-1-1170.webp"
+               srcset="assets/img/opt/interior-1-800.webp 800w, assets/img/opt/interior-1-1170.webp 1170w"
+               sizes="(max-width: 900px) 100vw, 55vw"
+               width="1170" height="1164" fetchpriority="high"
+               alt="Salão da Saint Tropez com arcos brancos, mesas claras e cadeiras de palhinha">
+        </figure>
+        <figure class="hero-photo hero-photo-small">
+          <img src="assets/img/opt/croissants-600.webp" width="600" height="516" alt="Croissants folhados da casa">
+        </figure>
+        <div class="hero-card">
+          <span class="hero-card-label">Hoje</span>
+          <span class="hero-card-hours" data-today-hours>6h às 22h</span>
+          <span class="hero-card-status"><span class="status-dot" aria-hidden="true"></span><span data-status-short>Todos os dias</span></span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Croissants</span><span>✦</span><span>Bolos Artesanais</span><span>✦</span><span>Cafés Especiais</span><span>✦</span><span>Adega Selecionada</span><span>✦</span><span>Ilha de Frios</span><span>✦</span><span>Doces Finos</span><span>✦</span>
-      <span>Croissants</span><span>✦</span><span>Bolos Artesanais</span><span>✦</span><span>Cafés Especiais</span><span>✦</span><span>Adega Selecionada</span><span>✦</span><span>Ilha de Frios</span><span>✦</span><span>Doces Finos</span><span>✦</span>
+  <div class="ticker" role="region" aria-label="Alguns itens da vitrine">
+    <button class="ticker-toggle" type="button" aria-pressed="false" aria-label="Pausar faixa animada">
+      <svg class="icon icon-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+      <svg class="icon icon-play" aria-hidden="true"><use href="#i-play"/></svg>
+    </button>
+    <div class="ticker-viewport">
+      <ul class="ticker-track">
+        <li>Croissants</li><li>Pão de nozes com doce de leite</li><li>Quiche folhada de queijo branco</li><li>Torta de morango</li><li>Bolos de vitrine</li><li>Cafés selecionados</li><li>Vinhos</li><li>Frios</li>
+      </ul>
+      <ul class="ticker-track" aria-hidden="true">
+        <li>Croissants</li><li>Pão de nozes com doce de leite</li><li>Quiche folhada de queijo branco</li><li>Torta de morango</li><li>Bolos de vitrine</li><li>Cafés selecionados</li><li>Vinhos</li><li>Frios</li>
+      </ul>
     </div>
   </div>
 
-  <section class="products" id="produtos">
+  <section class="casa section" id="casa" aria-labelledby="casa-title">
+    <div class="container casa-grid">
+      <figure class="casa-photo reveal-img">
+        <img src="assets/img/opt/interior-2-1169.webp"
+             srcset="assets/img/opt/interior-2-800.webp 800w, assets/img/opt/interior-2-1169.webp 1169w"
+             sizes="(max-width: 900px) 100vw, 50vw"
+             width="1169" height="1018" loading="lazy"
+             alt="Salão coberto por arcos de vidro, com palmeiras e prédios ao fundo">
+        <figcaption>O salão sob os arcos, com vista para a rua</figcaption>
+      </figure>
+
+      <div class="casa-copy">
+        <p class="eyebrow reveal">A casa</p>
+        <h2 id="casa-title" class="reveal" style="--d:1">Um pedaço do sul da França, <em>na Rua Piracema</em></h2>
+        <p class="reveal" style="--d:2">A Saint Tropez abriu em 2019 com uma ideia simples: trazer para a Zona Norte a leveza das confeitarias da Côte d'Azur. Arcos brancos, luz natural, cadeiras de palhinha e uma vitrine que convida a levar alguma coisa para casa.</p>
+        <p class="reveal" style="--d:3">Do primeiro café às 6h da manhã à taça de vinho no fim do dia, o atendimento é presencial e os pedidos são preparados na hora.</p>
+
+        <dl class="casa-facts reveal" style="--d:4">
+          <div><dt>Todos os dias</dt><dd>a partir das 6h</dd></div>
+          <div><dt>Pedidos</dt><dd>preparados na hora</dd></div>
+          <div><dt>Atendimento</dt><dd>presencial, sem reservas</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="vitrine section" id="vitrine" aria-labelledby="vitrine-title">
     <div class="container">
-      <div class="section-heading" data-reveal>
-        <span class="eyebrow">O que você encontra por aqui</span>
-        <h2>Nossas <span class="text-accent">categorias</span></h2>
+      <div class="section-head">
+        <p class="eyebrow reveal">Da vitrine</p>
+        <h2 id="vitrine-title" class="reveal" style="--d:1">O que você encontra <em>por aqui</em></h2>
+        <p class="section-sub reveal" style="--d:2">Da panificação do dia aos vinhos da adega, tudo num só lugar.</p>
       </div>
 
-      <div class="products-grid">
-        <article class="product-card" data-reveal data-category="paes">
-          <div class="product-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64"><path d="M12 40C12 26 20 16 32 16C44 16 52 26 52 40C52 46 44 50 32 50C20 50 12 46 12 40Z" fill="#E8B84B"/><path d="M20 34C24 30 40 30 44 34" stroke="#8A5A1E" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      <div class="bento">
+        <article class="tile tile-photo tile-a reveal">
+          <img src="assets/img/opt/bolo-red-velvet-1000.webp" srcset="assets/img/opt/bolo-red-velvet-600.webp 600w, assets/img/opt/bolo-red-velvet-1000.webp 1000w" sizes="(max-width: 700px) 100vw, 50vw" width="1000" height="870" loading="lazy" alt="Bolo red velvet com frutas vermelhas e açúcar de confeiteiro">
+          <div class="tile-body">
+            <h3>Bolos e tortas</h3>
+            <p>Bolos de camadas, tortas de morango e doces finos para o café da tarde ou para levar inteiro.</p>
           </div>
-          <h3>Panificação</h3>
-          <p>Pães, croissants e viennoiseries fresquinhos, preparados todos os dias.</p>
-          <div class="product-card-footer"><span></span></div>
         </article>
 
-        <article class="product-card" data-reveal data-delay="1" data-category="bolos">
-          <div class="product-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64"><rect x="14" y="30" width="36" height="20" rx="3" fill="#C4714E"/><rect x="14" y="24" width="36" height="8" rx="3" fill="#EFC6AE"/><circle cx="32" cy="16" r="4" fill="#1F8A82"/><line x1="32" y1="20" x2="32" y2="24" stroke="#1F8A82" stroke-width="2"/></svg>
+        <article class="tile tile-photo tile-b reveal" style="--d:1">
+          <img src="assets/img/opt/croissants-1000.webp" srcset="assets/img/opt/croissants-600.webp 600w, assets/img/opt/croissants-1000.webp 1000w" sizes="(max-width: 700px) 100vw, 50vw" width="1000" height="861" loading="lazy" alt="Croissants dourados e folhados">
+          <div class="tile-body">
+            <h3>Viennoiseries</h3>
+            <p>Croissants folhados, pão de nozes com doce de leite e quiches de queijo branco.</p>
           </div>
-          <h3>Bolos e Doces</h3>
-          <p>Bolos autorais, tortas e doces finos para qualquer ocasião, do dia a dia às datas especiais.</p>
-          <div class="product-card-footer"><span></span></div>
         </article>
 
-        <article class="product-card" data-reveal data-delay="2" data-category="cafes">
-          <div class="product-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64"><path d="M16 26H42V40C42 46 37 50 29 50C21 50 16 46 16 40V26Z" fill="#8A5A1E"/><path d="M42 30H46C50 30 50 38 46 38H42" stroke="#8A5A1E" stroke-width="2.5" fill="none"/><path d="M24 18C24 14 28 14 27 10" stroke="#C99A5B" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M32 18C32 14 36 14 35 10" stroke="#C99A5B" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        <article class="tile tile-photo tile-c reveal" style="--d:2">
+          <img src="assets/img/opt/pastry-case-1000.webp" srcset="assets/img/opt/pastry-case-600.webp 600w, assets/img/opt/pastry-case-1000.webp 1000w" sizes="(max-width: 700px) 100vw, 50vw" width="1000" height="865" loading="lazy" alt="Vitrine de pães e doces">
+          <div class="tile-body">
+            <h3>Pães e doces do dia</h3>
+            <p>A vitrine muda ao longo do dia. Os mais procurados costumam acabar cedo.</p>
           </div>
-          <h3>Cafés Especiais</h3>
-          <p>Blends selecionados, preparados na hora para acompanhar qualquer doce ou salgado da casa.</p>
-          <div class="product-card-footer"><span></span></div>
         </article>
 
-        <article class="product-card" data-reveal data-delay="3" data-category="adega">
-          <div class="product-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64"><path d="M28 10H36L34 30C38 32 40 38 40 42C40 48 36 52 32 52C28 52 24 48 24 42C24 38 26 32 30 30L28 10Z" fill="#1F8A82"/></svg>
+        <article class="tile tile-photo tile-d reveal">
+          <img src="assets/img/opt/prato-salmao-1000.webp" srcset="assets/img/opt/prato-salmao-600.webp 600w, assets/img/opt/prato-salmao-1000.webp 1000w" sizes="(max-width: 700px) 100vw, 50vw" width="1000" height="863" loading="lazy" alt="Prato de salmão com arroz e legumes">
+          <div class="tile-body">
+            <h3>Almoço</h3>
+            <p>Pratos completos, como o salmão com legumes, para quem quer almoçar sem pressa.</p>
           </div>
-          <h3>Adega</h3>
-          <p>Seleção própria de vinhos e espumantes para harmonizar com a experiência da casa.</p>
-          <div class="product-card-footer"><span></span></div>
         </article>
 
-        <article class="product-card" data-reveal data-delay="4" data-category="frios">
-          <div class="product-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64"><rect x="10" y="34" width="44" height="8" rx="4" fill="#E8B84B"/><rect x="14" y="26" width="36" height="8" rx="4" fill="#C4714E"/><rect x="18" y="18" width="28" height="8" rx="4" fill="#1F8A82"/></svg>
-          </div>
-          <h3>Ilha de Frios</h3>
-          <p>Queijos, embutidos e acompanhamentos selecionados, prontos para montar sua tábua perfeita.</p>
-          <div class="product-card-footer"><span></span></div>
-        </article>
-
-        <article class="product-card" data-reveal data-delay="5" data-category="pratos">
-          <div class="product-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64"><circle cx="34" cy="32" r="18" fill="#F0DBCD"/><circle cx="34" cy="32" r="11" fill="none" stroke="#C4714E" stroke-width="2"/><path d="M14 16V30M14 16C11 16 11 22 14 22M18 16V30" stroke="#1F8A82" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
-          </div>
-          <h3>Pratos &amp; Refeições</h3>
-          <p>Saladas, sanduíches e pratos completos, como peixe grelhado e salmão, pra quem quer almoçar por aqui.</p>
-          <div class="product-card-footer"><span></span></div>
+        <article class="tile tile-solid tile-e reveal" style="--d:1" aria-labelledby="tile-e-title">
+          <h3 id="tile-e-title" class="tile-solid-title">E também</h3>
+          <ul class="solid-list">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-coffee"/></svg>
+              <div><strong>Cafés selecionados</strong><span>para acompanhar o doce ou o salgado</span></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-wine"/></svg>
+              <div><strong>Vinhos</strong><span>uma adega própria, para o fim do dia</span></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-basket"/></svg>
+              <div><strong>Frios</strong><span>queijos e embutidos, muitos importados</span></div>
+            </li>
+          </ul>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="gallery" id="galeria">
+  <section class="dia section" id="dia" aria-labelledby="dia-title">
     <div class="container">
-      <div class="section-heading" data-reveal>
-        <span class="eyebrow">Um pouco da casa</span>
-        <h2>Nossa <span class="text-accent">galeria</span></h2>
+      <div class="section-head section-head-light">
+        <p class="eyebrow reveal">Um dia na Saint Tropez</p>
+        <h2 id="dia-title" class="reveal" style="--d:1">Das 6h da manhã <em>até a noite</em></h2>
+        <p class="section-sub reveal" style="--d:2">Uma casa para cada momento do dia.</p>
       </div>
 
-      <div class="gallery-grid">
-        <figure class="gallery-item span-2" data-reveal>
-          <img src="assets/img/facade-wide.jpg" alt="Fachada da Saint Tropez Confeitaria" loading="lazy">
-          <figcaption>Fachada · Rua Piracema</figcaption>
+      <ol class="timeline">
+        <li class="moment reveal" data-from="6" data-to="11">
+          <span class="moment-icon" aria-hidden="true"><svg class="icon"><use href="#i-sunrise"/></svg></span>
+          <span class="moment-time">6h</span>
+          <h3>Café da manhã</h3>
+          <p>Croissant quentinho, pão do dia e um café antes do trabalho.</p>
+          <span class="moment-now">Agora</span>
+        </li>
+        <li class="moment reveal" style="--d:1" data-from="11" data-to="15">
+          <span class="moment-icon" aria-hidden="true"><svg class="icon"><use href="#i-utensils"/></svg></span>
+          <span class="moment-time">Meio-dia</span>
+          <h3>Almoço</h3>
+          <p>Pratos completos num salão iluminado por luz natural.</p>
+          <span class="moment-now">Agora</span>
+        </li>
+        <li class="moment reveal" style="--d:2" data-from="15" data-to="18">
+          <span class="moment-icon" aria-hidden="true"><svg class="icon"><use href="#i-sun"/></svg></span>
+          <span class="moment-time">Tarde</span>
+          <h3>Café da tarde</h3>
+          <p>Uma fatia de bolo, uma torta de morango e a vitrine cheia.</p>
+          <span class="moment-now">Agora</span>
+        </li>
+        <li class="moment reveal" style="--d:3" data-from="18" data-to="24">
+          <span class="moment-icon" aria-hidden="true"><svg class="icon"><use href="#i-moon"/></svg></span>
+          <span class="moment-time">Noite</span>
+          <h3>Vinhos e frios</h3>
+          <p>Uma taça e uma tábua para fechar o dia, até 22h ou 23h.</p>
+          <span class="moment-now">Agora</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="ambiente section" id="ambiente" aria-labelledby="ambiente-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Ambiente</p>
+        <h2 id="ambiente-title" class="reveal" style="--d:1">Feita para <em>ficar um pouco mais</em></h2>
+      </div>
+
+      <div class="gallery">
+        <figure class="shot shot-tall reveal-img">
+          <img src="assets/img/opt/facade-wide-800.webp" srcset="assets/img/opt/facade-wide-800.webp 800w, assets/img/opt/facade-wide-1170.webp 1170w" sizes="(max-width: 700px) 100vw, 34vw" width="800" height="994" loading="lazy" alt="Fachada branca com o letreiro Saint Tropez e o toldo turquesa">
+          <figcaption>A fachada</figcaption>
         </figure>
-        <figure class="gallery-item" data-reveal data-delay="1">
-          <img src="assets/img/croissants.jpg" alt="Croissants artesanais" loading="lazy">
-          <figcaption>Croissants do dia</figcaption>
+        <figure class="shot reveal-img" style="--d:1">
+          <img src="assets/img/opt/cake-truck-1000.webp" srcset="assets/img/opt/cake-truck-600.webp 600w, assets/img/opt/cake-truck-1000.webp 1000w" sizes="(max-width: 700px) 100vw, 33vw" width="1000" height="862" loading="lazy" alt="Carrinho turquesa expondo bolos e tortas">
+          <figcaption>O carrinho de bolos</figcaption>
         </figure>
-        <figure class="gallery-item" data-reveal data-delay="2">
-          <img src="assets/img/pastry-case.jpg" alt="Vitrine de pães e doces" loading="lazy">
-          <figcaption>Vitrine de doces e pães</figcaption>
+        <figure class="shot reveal-img" style="--d:2">
+          <img src="assets/img/opt/truck-front-1000.webp" srcset="assets/img/opt/truck-front-600.webp 600w, assets/img/opt/truck-front-1000.webp 1000w" sizes="(max-width: 700px) 100vw, 33vw" width="1000" height="862" loading="lazy" alt="Triciclo turquesa com a marca Saint Tropez dentro do salão">
+          <figcaption>O triciclo da casa</figcaption>
         </figure>
-        <figure class="gallery-item" data-reveal data-delay="3">
-          <img src="assets/img/cake-truck.jpg" alt="Carrinho de bolos temático" loading="lazy">
-          <figcaption>Nosso carrinho de bolos</figcaption>
-        </figure>
-        <figure class="gallery-item" data-reveal data-delay="4">
-          <img src="assets/img/interior-1.jpg" alt="Salão interno da confeitaria" loading="lazy">
-          <figcaption>Salão com vista pra rua</figcaption>
-        </figure>
-        <figure class="gallery-item" data-reveal data-delay="5">
-          <img src="assets/img/menu/bolo-red-velvet.jpg" alt="Bolo red velvet" loading="lazy">
-          <figcaption>Bolos da casa</figcaption>
-        </figure>
-        <figure class="gallery-item" data-reveal data-delay="6">
-          <img src="assets/img/menu/prato-salmao.jpg" alt="Prato de salmão" loading="lazy">
-          <figcaption>Pratos e refeições</figcaption>
+        <figure class="shot shot-wide reveal-img" style="--d:3">
+          <img src="assets/img/opt/salao-cadeiras-1400.webp" srcset="assets/img/opt/salao-cadeiras-800.webp 800w, assets/img/opt/salao-cadeiras-1400.webp 1400w" sizes="(max-width: 700px) 100vw, 66vw" width="1400" height="860" loading="lazy" alt="Salão com mesas brancas, cadeiras de palhinha e luminárias pendentes">
+          <figcaption>Cadeiras de palhinha e luminárias</figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <section class="faq" id="duvidas">
-    <div class="container faq-inner">
-      <div class="section-heading" data-reveal>
-        <span class="eyebrow">Tire suas dúvidas</span>
-        <h2>Perguntas <span class="text-accent">frequentes</span></h2>
-      </div>
+  <section class="visite section" id="visite" aria-labelledby="visite-title">
+    <div class="container visite-grid">
+      <div class="visite-info">
+        <p class="eyebrow reveal">Visite</p>
+        <h2 id="visite-title" class="reveal" style="--d:1">Te esperamos <em>na Rua Piracema</em></h2>
 
-      <div class="faq-list" data-reveal data-delay="1">
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>Preciso reservar mesa?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><p>Não, o atendimento aqui é só presencial e por ordem de chegada, sem sistema de reservas.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>Vocês fazem entrega?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><p>No momento não. Os produtos são feitos e consumidos ou retirados direto na loja.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>Dá pra fazer pedido por telefone?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><p>Ainda não, mas você pode nos chamar no WhatsApp pra tirar dúvidas antes de vir até a confeitaria.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" type="button">
-            <span>Qual o horário de funcionamento?</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-answer"><p>Segunda a quarta das 6h às 22h, e quinta a domingo das 6h às 23h.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <address class="address reveal" style="--d:2">
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          <span>Rua Piracema, 211<br>Santa Teresinha, São Paulo, SP<br>CEP 02460-040</span>
+        </address>
 
-  <section class="visit" id="visite-nos">
-    <svg class="leaf leaf-1" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 190C100 190 20 150 20 80C20 40 60 10 100 10C140 10 180 40 180 80C180 150 100 190 100 190Z" fill="#E8B84B"/></svg>
-    <div class="container visit-inner">
-      <div class="visit-info" data-reveal>
-        <span class="eyebrow">Venha nos visitar</span>
-        <h2>Onde <span class="text-accent">estamos</span></h2>
-        <p class="visit-address">Rua Piracema, 211 · Santa Terezinha, São Paulo - SP · 02460-040</p>
-
-        <table class="hours-table">
-          <tbody>
-            <tr><td>Segunda a Quarta</td><td>06:00 às 22:00</td></tr>
-            <tr><td>Quinta a Domingo</td><td>06:00 às 23:00</td></tr>
-          </tbody>
-        </table>
-
-        <div class="visit-chips">
-          <span class="info-chip">Somente presencial</span>
-          <span class="info-chip">Sem reservas</span>
-          <span class="info-chip">Sem entregas</span>
-        </div>
-
-        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Saint+Tropez+Confeitaria+Rua+Piracema+211+Santa+Terezinha+Sao+Paulo" target="_blank" rel="noopener">Como chegar</a>
-
-        <div class="visit-highlight">
-          <div class="visit-highlight-item">
-            <span class="visit-highlight-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+        <div class="hours reveal" style="--d:3">
+          <div class="hours-head">
+            <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+            <h3>Horário</h3>
+            <span class="status-pill" data-status aria-live="polite">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-status-text>Aberta todos os dias</span>
             </span>
-            <div>
-              <span class="stat-number" data-count="58.8" data-suffix=" mil">0</span>
-              <small>seguidores no Instagram</small>
-            </div>
           </div>
-          <div class="visit-highlight-item">
-            <span class="visit-highlight-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2.8L14.7 8.7L21 9.5L16.5 13.9L17.6 20.2L12 17.2L6.4 20.2L7.5 13.9L3 9.5L9.3 8.7L12 2.8Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-            </span>
-            <div>
-              <span class="stat-number" data-count="4.9" data-decimals="1">0</span>
-              <small>de avaliação no Google</small>
-            </div>
-          </div>
+          <table class="hours-table">
+            <caption class="sr-only">Horário de funcionamento por dia da semana</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Segunda</th><td>6h às 22h</td></tr>
+              <tr data-day="2"><th scope="row">Terça</th><td>6h às 22h</td></tr>
+              <tr data-day="3"><th scope="row">Quarta</th><td>6h às 22h</td></tr>
+              <tr data-day="4"><th scope="row">Quinta</th><td>6h às 23h</td></tr>
+              <tr data-day="5"><th scope="row">Sexta</th><td>6h às 23h</td></tr>
+              <tr data-day="6"><th scope="row">Sábado</th><td>6h às 23h</td></tr>
+              <tr data-day="0"><th scope="row">Domingo</th><td>6h às 23h</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="visite-actions reveal" style="--d:4">
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Saint+Tropez+Confeitaria+Rua+Piracema+211+Santa+Teresinha+Sao+Paulo" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg>Google Maps
+          </a>
+          <a class="btn btn-ghost" href="https://waze.com/ul?q=Rua%20Piracema%20211%20Santa%20Teresinha%20Sao%20Paulo&amp;navigate=yes" target="_blank" rel="noopener">Abrir no Waze</a>
         </div>
       </div>
 
-      <div class="visit-map" data-reveal data-delay="1">
+      <div class="map reveal-img" style="--d:1">
         <iframe
-          title="Mapa Saint Tropez Confeitaria"
-          src="https://www.google.com/maps?q=Rua+Piracema,+211,+Santa+Terezinha,+S%C3%A3o+Paulo+-+SP,+02460-040&output=embed"
+          title="Mapa com a localização da Saint Tropez Confeitaria na Rua Piracema, 211"
+          src="https://www.google.com/maps?q=Rua+Piracema,+211,+Santa+Teresinha,+S%C3%A3o+Paulo+-+SP,+02460-040&amp;output=embed"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
 
-  <section class="contact" id="contato">
-    <div class="container contact-inner" data-reveal>
-      <h2>Alguma <span class="text-accent">dúvida</span>?</h2>
-      <p>Fale com a gente pelo canal que preferir.</p>
-      <div class="contact-actions">
-        <a class="btn btn-primary" href="https://wa.me/5511944815707?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Saint%20Tropez%20Confeitaria%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn-outline" href="https://www.instagram.com/sainttropezconfeitaria/" target="_blank" rel="noopener">Instagram</a>
+  <section class="faq section" id="duvidas" aria-labelledby="faq-title">
+    <div class="container faq-grid">
+      <div class="section-head section-head-left">
+        <p class="eyebrow reveal">Dúvidas</p>
+        <h2 id="faq-title" class="reveal" style="--d:1">Antes de <em>vir até aqui</em></h2>
+        <p class="section-sub reveal" style="--d:2">O que as pessoas mais perguntam sobre a casa.</p>
       </div>
-      <p class="contact-handle">
-        <span class="contact-handle-dot" aria-hidden="true"></span>
-        @sainttropezconfeitaria
-      </p>
+
+      <div class="faq-list reveal" style="--d:2">
+        <details class="faq-item">
+          <summary><span>Preciso reservar mesa?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Não. A casa não trabalha com reservas, e as mesas são ocupadas por ordem de chegada.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span>Dá para fazer pedido por telefone?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Não. O atendimento é presencial, e os pedidos são feitos e preparados na hora, direto na loja.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span>Qual o melhor horário para ir?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Se você quer os itens mais procurados da vitrine, chegue cedo. A casa abre às 6h todos os dias.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><span>Até que horas fica aberta?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>De segunda a quarta, até 22h. De quinta a domingo, até 23h.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="final-title">
+    <div class="final-bg" aria-hidden="true">
+      <img src="assets/img/opt/exterior-night-1170.webp" alt="" width="1170" height="1160" loading="lazy">
+    </div>
+    <div class="container final-inner">
+      <img src="assets/img/logo-icon.png" alt="" width="72" height="72" class="final-mark reveal">
+      <h2 id="final-title" class="reveal" style="--d:1">Seu próximo café <em>já tem endereço</em></h2>
+      <p class="reveal" style="--d:2">Rua Piracema, 211, Santa Teresinha. Todos os dias, a partir das 6h.</p>
+      <div class="final-actions reveal" style="--d:3">
+        <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&amp;query=Saint+Tropez+Confeitaria+Rua+Piracema+211+Santa+Teresinha+Sao+Paulo" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg>Como chegar
+        </a>
+        <a class="btn btn-outline-light" href="https://www.instagram.com/sainttropezconfeitaria/" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>@sainttropezconfeitaria
+        </a>
+      </div>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/img/logo-icon.png" alt="Saint Tropez Confeitaria" class="footer-logo">
-        <p>Confeitaria com alma de Côte d'Azur, na Zona Norte de São Paulo desde 2019.</p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/sainttropezconfeitaria/" target="_blank" rel="noopener">Instagram</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Horário</h4>
-        <span>Seg a qua: 06:00 às 22:00</span>
-        <span>Qui a dom: 06:00 às 23:00</span>
-      </div>
-      <div class="footer-col">
-        <h4>Contato</h4>
-        <a href="https://wa.me/5511944815707?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Saint%20Tropez%20Confeitaria%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://www.instagram.com/sainttropezconfeitaria/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-      <div class="footer-col">
-        <h4>Categorias</h4>
-        <a href="#produtos">Panificação</a>
-        <a href="#produtos">Bolos e Doces</a>
-        <a href="#produtos">Cafés Especiais</a>
-        <a href="#produtos">Adega</a>
-        <a href="#produtos">Ilha de Frios</a>
-        <a href="#produtos">Pratos &amp; Refeições</a>
-      </div>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#inicio" class="brand brand-light" aria-label="Saint Tropez Confeitaria, voltar ao início">
+        <img src="assets/img/logo-icon.png" alt="" width="44" height="44" class="brand-mark">
+        <span class="brand-word">Saint Tropez<small>confeitaria</small></span>
+      </a>
+      <p>Confeitaria inspirada na Côte d'Azur, na Zona Norte de São Paulo desde 2019.</p>
     </div>
-    <div class="footer-legal">
-      <p>© 2026 Saint Tropez Confeitaria · Rua Piracema, 211, Santa Terezinha, São Paulo - SP. Proposta de site conceito. Desenvolvido por <a href="https://apex-web-oficial.netlify.app/" target="_blank" rel="noopener">Apex Web</a>.</p>
+    <div class="footer-col">
+      <h3>Endereço</h3>
+      <p>Rua Piracema, 211<br>Santa Teresinha, São Paulo, SP<br>02460-040</p>
     </div>
+    <div class="footer-col">
+      <h3>Horário</h3>
+      <p>Seg a qua, 6h às 22h<br>Qui a dom, 6h às 23h</p>
+    </div>
+    <div class="footer-col">
+      <h3>Navegue</h3>
+      <ul>
+        <li><a href="#casa">A casa</a></li>
+        <li><a href="#vitrine">Vitrine</a></li>
+        <li><a href="#visite">Como chegar</a></li>
+        <li><a href="https://www.instagram.com/sainttropezconfeitaria/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-legal">
+    <p>© 2026 Saint Tropez Confeitaria. Fotos: @sainttropezconfeitaria.</p>
+    <p>Proposta de site conceito desenvolvida por <a href="https://apex-web-oficial.netlify.app/" target="_blank" rel="noopener">Apex Web</a>.</p>
   </div>
 </footer>
 
-<button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">↑</button>
+<nav class="mobile-bar" aria-label="Ações rápidas">
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Saint+Tropez+Confeitaria+Rua+Piracema+211+Santa+Teresinha+Sao+Paulo" target="_blank" rel="noopener" class="mobile-bar-primary">
+    <svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg>Como chegar
+  </a>
+  <a href="#visite">
+    <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span data-status-short>Horário</span>
+  </a>
+  <a href="https://www.instagram.com/sainttropezconfeitaria/" target="_blank" rel="noopener" aria-label="Instagram da Saint Tropez">
+    <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+  </a>
+</nav>
+
+<button class="to-top" id="to-top" type="button" aria-label="Voltar ao topo">
+  <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>
+</button>
 
 <script src="script.js"></script>
 </body>
